@@ -1,0 +1,8 @@
+gcc-arm-none-eabi
+git
+ninja-build
+openjdk-17-jdk
+python3-pip
+sudo
+unzip
+wget
