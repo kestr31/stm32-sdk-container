@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MOUNT_DIR=place_your_absolute_directory_here
+MOUNT_DIR=/home/merlin/gitcodes/RoSAT/sdk-container/endurosat-obc-sdk
 REMOVE_AFTER_EXIT=true
 CONTAINER_NAME=sdk-env
 CONTAINER_IMAGE=sdk-env:1.12.1
@@ -20,7 +20,7 @@ fi
 
 # deploy container
 docker run -itd ${REMOVE_AFTER_EXIT_FLAG} \
-  -v ${MOUNT_DIR}:/root/sdk \
+  -v ${MOUNT_DIR}:/home/user/sdk \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -e XDG_RUNTIME_DIR=/tmp \
   -e DISPLAY=${DISPLAY} \
